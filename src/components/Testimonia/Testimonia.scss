@@ -1,0 +1,183 @@
+.testimonia {
+  p {
+    text-transform: uppercase;
+    color: blue;
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .testimonia-wrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+    &__image {
+      width: 50%;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    &__body {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 425px;
+      gap: 30px;
+
+      img {
+        width: 50px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          display: flex;
+          flex-direction: column;
+
+          strong {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 18px;
+            color: black;
+          }
+        }
+
+        button {
+          background-color: black;
+          width: 100px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          border: none;
+          cursor: pointer;
+
+          img {
+            width: 10px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .testimonia {
+    h2 {
+      font-size: 36px;
+    }
+
+    .testimonia-wrapper {
+      gap: 40px;
+
+      &__body {
+        h2 {
+          font-size: 24px;
+        }
+
+        div {
+          span {
+            strong {
+              font-size: 18px;
+            }
+
+            p {
+              font-size: 16px;
+            }
+          }
+
+          button {
+            width: 80px;
+            height: 40px;
+            gap: 20px;
+
+            img {
+              width: 8px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonia {
+    p {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .testimonia-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      &__image {
+        width: 100%;
+      }
+
+      &__body {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+          font-size: 20px;
+        }
+
+        div {
+          flex-direction: column;
+          gap: 15px;
+
+          span {
+            strong {
+              font-size: 16px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+
+          button {
+            width: 70px;
+            height: 35px;
+            gap: 15px;
+
+            img {
+              width: 7px;
+              height: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

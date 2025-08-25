@@ -1,0 +1,55 @@
+.trusted {
+  margin-top: 100px;
+
+  .partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-direction: column;
+
+    p {
+      font-size: 22px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .trusted {
+    .partner {
+      gap: 25px;
+
+      p {
+        font-size: 18px;
+      }
+
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .trusted {
+    margin-top: 60px;
+
+    .partner {
+      gap: 15px;
+
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}

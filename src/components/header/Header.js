@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.scss"
-import {ReactComponent as Logoo} from "../../../assets/logo.svg"
+import logo from "../../assets/logo.svg"
 
 
 const Header = () => {
@@ -9,7 +9,7 @@ const navbarOptions = ["About", "Services", "Projects", "Blog", "Book a call->"]
         <section className="navbar">
             <div className="container">
                 <div className="navbar-wrapper">
-                    <Logoo className="navbar-image" />
+                    <img src={logo} alt="" />
                     <ul className="navbar-options">
                         {navbarOptions.map((item, index) => (
                             <li key={index}>
